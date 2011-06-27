@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "biomodel_client.gemspec",
     "lib/search_biomodel.rb",
     "test/helper.rb",
     "test/test_search_biomodel.rb"
