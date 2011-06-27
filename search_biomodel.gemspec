@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{search_biomodel}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Niall Beard"]
@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/search_biomodel.rb",
+    "search_biomodel.gemspec",
+    "test.rb",
     "test/helper.rb",
     "test/test_search_biomodel.rb"
   ]
