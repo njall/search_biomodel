@@ -14,12 +14,12 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "search_biomodel"
-  gem.homepage = "http://github.com/njall/search_biomodel"
+  gem.name = "biomodel_client"
+  gem.homepage = "http://github.com/njall/biomodel_client"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "niallbeard@gmail.com"
+  gem.summary = %Q{Interfaces with BioModel search engine}
+  gem.description = %Q{Client package for creating, sending, recieving and consuming SOAP messages from BioModels search engine }
+  gem.email = "beardn9@cs.man.ac.uk"
   gem.authors = ["Niall Beard"]
   # dependencies defined in Gemfile
 end
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "search_biomodel #{version}"
+  rdoc.title = "biomodel_client #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
