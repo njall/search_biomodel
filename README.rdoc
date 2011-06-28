@@ -16,17 +16,25 @@ example:
 
   include SysMODB::SearchBiomodel
 
+
   #search and display all models
-  all_models = get_all_models
-  all_models.each { |item| puts "ID = #{item[:key]}    |    NAME = #{item[:value]}\n" }
+
+    all_models = get_all_models
+    all_models.each { |item| puts "ID = #{item[:key]}    |    NAME = #{item[:value]}\n" }
+
 
   #search and display models with ChEBIID equal to 15422
-  models_by_chebiid = search_by_ChEBIID("CHEBI:15422")
-  models_by_chebiid.each { |item| puts "#{i+=1} #{item.to_s}\n"}
+
+    models_by_chebiid = search_by_ChEBIID("CHEBI:15422")
+    models_by_chebiid.each { |item| puts "#{i+=1} #{item.to_s}\n"}
+
 
   #search and display models containing the string "Kolomeisky2003"
-  models_by_name = search_by_name("Kolomeisky2003")
-  models_by_name.each { |item| puts "#{i+=1} #{item.to_s}\n"}
+
+    models_by_name = search_by_name("Kolomeisky2003")
+    models_by_name.each { |item| puts "#{i+=1} #{item.to_s}\n"}
+  
+  
 
 == Contributing to search_biomodel
  

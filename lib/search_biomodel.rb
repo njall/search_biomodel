@@ -39,11 +39,16 @@ module SysMODB
     private
    
     def create_connection
-      client = Savon::Client.new do
-        wsdl.document = "http://www.ebi.ac.uk/biomodels-main/services/BioModelsWebServices?wsdl"
-        wsdl.namespace = "http://biomodels.ebi.ac.uk"
-      end
-    end
+      Savon.configure do |config|
+        config.log = false
+        HTTPI.log = false
+        client = Savon::Client.new do
+          wsdl.document = "http://www.ebi.ac.uk/biomodels-main/services/BioModelsWebServices?wsdl"
+          wsdl.namespace = "http://biomodels.ebi.ac.uk"
+        end #client
+      end #configure
+    end #create_connection
+
 
   end #SearchBiomodel
 end #SysMODB
