@@ -6,6 +6,10 @@ There are (currently) 3 methods to communicate with the biomodels website (found
 
 These methods are "search_by_chebiid", "search_by_name" and "get_all_models". The former two return an array and the latter a hash map of :key and :value
 
+== Installation 
+
+  gem install seach_biomodel
+
 == Contributing to search_biomodel
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
