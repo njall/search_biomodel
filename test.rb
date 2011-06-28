@@ -1,5 +1,5 @@
 require 'rubygems'
-require '/home/cspc018/Work/Repos/gems/search_biomodel/lib/search_biomodel.rb'
+#require '/home/cspc018/Work/Repos/gems/search_biomodel/lib/search_biomodel.rb'
 require 'seach_biomodel'
 
 
