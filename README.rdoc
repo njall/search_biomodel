@@ -10,6 +10,16 @@ These methods are "search_by_chebiid", "search_by_name" and "get_all_models". Th
 
   gem install seach_biomodel
 
+== Usage
+example:
+  require 'search_biomodel'
+
+  include SysMODB::SearchBiomodel
+
+  all_models = get_all_models
+  all_models.each { |item| puts "ID = #{item[:key]}    |    NAME = #{item[:value]}\n" }
+
+
 == Contributing to search_biomodel
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
