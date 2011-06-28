@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'savon'
+
+
 module SysMODB
 
   class SearchBiomodelException < Exception

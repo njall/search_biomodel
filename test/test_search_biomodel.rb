@@ -3,10 +3,9 @@ require 'search_biomodel'
 
 
 class TestSearchBiomodel < Test::Unit::TestCase
+
   include SysMODB::SearchBiomodel
 
-
-#returned result is a hash. use response[:key] or response[:value]
    def test_find_all_models
       response = []
       i=0
@@ -16,7 +15,6 @@ class TestSearchBiomodel < Test::Unit::TestCase
    end
 
 
-# need to find example of chebiid
    def test_search_by_ChEBIID
       response = []
       i = 0 
@@ -26,7 +24,6 @@ class TestSearchBiomodel < Test::Unit::TestCase
    end
 
 
-#need to handle multiple results
    def test_search_by_name
       response = []
       i = 0 
@@ -34,4 +31,6 @@ class TestSearchBiomodel < Test::Unit::TestCase
       response.each {|x| puts "\n\n Response #{i+=1}:   #{x} "}
       response.each {|x| assert_not_nil x }
    end
+
+
 end
