@@ -1,6 +1,10 @@
 = search_biomodel
 
-Description goes here.
+search biomodel is a small gem ready to be used for running queries through the biomodel web service API. 
+
+There are (currently) 3 methods to communicate with the biomodels website (found at http://www.ebi.ac.uk/biomodels-main/). 
+
+These methods are "search_by_chebiid", "search_by_name" and "get_all_models". The former two return an array and the latter a hash map of :key and :value
 
 == Contributing to search_biomodel
  
@@ -11,7 +15,6 @@ Description goes here.
 * Commit and push until you are happy with your contribution
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
-
 == Copyright
 
 Copyright (c) 2011 Niall Beard. See LICENSE.txt for
