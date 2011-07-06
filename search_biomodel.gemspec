@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Niall Beard"]
   s.date = %q{2011-07-05}
-  s.description = %q{Client package for creating, sending, recieving and consuming SOAP messages from BioModels search engine }
+  s.description = %q{Client package for creating, sending, receiving and consuming SOAP messages from BioModels search engine }
   s.email = %q{beardn9@cs.man.ac.uk}
   s.extra_rdoc_files = [
     "LICENSE.txt",

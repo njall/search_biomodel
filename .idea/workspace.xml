@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5060248-6b34-4e75-b0c1-8bf3e1f0b7e1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/search_biomodel.rb" afterPath="$PROJECT_DIR$/lib/search_biomodel.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helper.rb" afterPath="$PROJECT_DIR$/test/helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_biomodel.gemspec" afterPath="$PROJECT_DIR$/search_biomodel.gemspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_search_biomodel.rb" afterPath="$PROJECT_DIR$/test/test_search_biomodel.rb" />
     </list>
     <ignored path="search_biomodel.iws" />
@@ -28,10 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="search_biomodel.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search_biomodel.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/search_biomodel.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="25" column="26" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="32" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_biomodel.gemspec" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_biomodel.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="64" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.rdoc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="-0.4189189">
               <folding />
             </state>
           </provider>
@@ -40,7 +69,7 @@
       <file leaf-file-name="test_search_biomodel.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_search_biomodel.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="46" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+            <state line="63" column="61" selection-start="2100" selection-end="2115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,9 +98,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/test_search_biomodel.rb" />
         <option value="$PROJECT_DIR$/test/helper.rb" />
+        <option value="$PROJECT_DIR$/LICENSE.txt" />
+        <option value="$PROJECT_DIR$/search_biomodel.gemspec" />
         <option value="$PROJECT_DIR$/lib/search_biomodel.rb" />
+        <option value="$PROJECT_DIR$/test/test_search_biomodel.rb" />
+        <option value="$PROJECT_DIR$/README.rdoc" />
       </list>
     </option>
   </component>
@@ -371,16 +403,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_search_biomodel.rb">
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+        <state line="11" column="32" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/search_biomodel.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="25" column="26" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_search_biomodel.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="61" selection-start="2100" selection-end="2115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_biomodel.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="64" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rdoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="-0.4189189">
           <folding />
         </state>
       </provider>
