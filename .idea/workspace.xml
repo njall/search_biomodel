@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c5060248-6b34-4e75-b0c1-8bf3e1f0b7e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_search_biomodel.rb" afterPath="$PROJECT_DIR$/test/test_search_biomodel.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_biomodel.gemspec" afterPath="$PROJECT_DIR$/search_biomodel.gemspec" />
     </list>
     <ignored path="search_biomodel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test_search_biomodel.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test_search_biomodel.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_search_biomodel.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="39" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.7601351">
+            <state line="82" column="131" selection-start="2758" selection-end="2758" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_biomodel.gemspec" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/search_biomodel.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="64" selection-start="460" selection-end="460" vertical-scroll-proportion="0.30405405">
               <folding />
             </state>
           </provider>
@@ -61,10 +70,10 @@
       <list>
         <option value="$PROJECT_DIR$/test/helper.rb" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
-        <option value="$PROJECT_DIR$/search_biomodel.gemspec" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/lib/search_biomodel.rb" />
         <option value="$PROJECT_DIR$/test/test_search_biomodel.rb" />
+        <option value="$PROJECT_DIR$/search_biomodel.gemspec" />
       </list>
     </option>
   </component>
@@ -378,13 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search_biomodel.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="64" selection-start="460" selection-end="460" vertical-scroll-proportion="0.30405405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="710" selection-end="710" vertical-scroll-proportion="-0.4189189">
@@ -394,7 +396,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_search_biomodel.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="39" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.7601351">
+        <state line="82" column="131" selection-start="2758" selection-end="2758" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_biomodel.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="64" selection-start="460" selection-end="460" vertical-scroll-proportion="0.30405405">
           <folding />
         </state>
       </provider>
