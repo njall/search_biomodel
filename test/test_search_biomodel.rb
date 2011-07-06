@@ -77,7 +77,7 @@ class TestSearchBiomodel < Test::Unit::TestCase
     puts "\n\n ---------------------model ID by person---------------------\n\n"
     response = []
     i=0
-    response = @instance.get_models_id_by_person("Jim")
+    response = @instance.search_by_person("Jim")
     response.each { |x| puts "Response #{i+=1}:    #{x} " }
     response.each { |x| assert_not_nil x }
     assert_not_nil response
@@ -87,7 +87,7 @@ class TestSearchBiomodel < Test::Unit::TestCase
     puts "\n\n ---------------------model ID by incorrect person---------------------\n\n"
     response = []
     i=0
-    response = @instance.get_models_id_by_person("THIS IS NOT A VALID PERSONS NAME!!!!!<P></P>")
+    response = @instance.search_by_person("THIS IS NOT A VALID PERSONS NAME!!!!!<P></P>")
     response.each { |x| puts "Response #{i+=1}:    #{x} " }
     response.each { |x| assert_not_nil x }
     assert_not_nil response
