@@ -1,18 +1,28 @@
-
-
-require 'rubygems'
 require 'savon'
-
+require 'singleton'
 
 module SysMODB
 
   class SearchBiomodelException < Exception
   end
 
-  module SearchBiomodel
+  class SearchBiomodel
+    include Singleton
+
+    def initialize
+      @connection =       Savon.configure do |config|
+        config.log = false
+        HTTPI.log = false
+        Savon::Client.new do
+          wsdl.document = "http://www.ebi.ac.uk/biomodels-main/services/BioModelsWebServices?wsdl"
+          wsdl.namespace = "http://biomodels.ebi.ac.uk"
+        end
+      end
+
+    end
 
     def search_by_ChEBIID(search_string)
-      client = create_connection
+      client = connection
       response = client.request(:biom, "get_models_id_by_ch_ebi_id") do
         soap.body = { :ChEBBId => search_string, :attributes! => { :ChEBBId => { "xsi:type" => "xsd:string" } } }  
       end
@@ -21,7 +31,7 @@ module SysMODB
     
 
     def get_all_models
-      client = create_connection  
+      client = connection
       response = client.request(:biom, "get_all_models" ) do
         soap.body = { :modelName => "?", :attributes! => { :modelName => { "xsi:type" => "xsd:string" } } }
       end
@@ -30,7 +40,7 @@ module SysMODB
   
 
     def search_by_name (search_string)
-      client = create_connection
+      client = connection
       response = client.request(:biom, "get_models_id_by_name") do
         soap.body = { :modelName => search_string, :attributes! => { :modelName => { "xsi:type" => "xsd:string" } } }  
       end
@@ -38,7 +48,7 @@ module SysMODB
     end
 
    def get_models_id_by_person (search_string)
-      client = create_connection
+      client = connection
       response = client.request(:biom, "get_models_id_by_person") do
         soap.body = { :personName => search_string, :attributes! => { :personName => { "xsi:type" => "xsd:string" } } }  
       end
@@ -46,7 +56,7 @@ module SysMODB
    end
 
    def get_model_name_by_id (search_string)
-      client = create_connection
+      client = connection
       response = client.request(:biom, "get_model_name_by_id") do
         soap.body = { :id => search_string, :attributes! => { :id => { "xsi:type" => "xsd:string" } } }  
       end
@@ -55,17 +65,10 @@ module SysMODB
   
 
 
-    private
+    protected
    
-    def create_connection
-      Savon.configure do |config|
-        config.log = false
-        HTTPI.log = false
-        client = Savon::Client.new do
-          wsdl.document = "http://www.ebi.ac.uk/biomodels-main/services/BioModelsWebServices?wsdl"
-          wsdl.namespace = "http://biomodels.ebi.ac.uk"
-        end
-      end
+    def connection
+      @connection
     end 
 
 
