@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5060248-6b34-4e75-b0c1-8bf3e1f0b7e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/search_biomodel.rb" afterPath="$PROJECT_DIR$/lib/search_biomodel.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search_biomodel.gemspec" afterPath="$PROJECT_DIR$/search_biomodel.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_search_biomodel.rb" afterPath="$PROJECT_DIR$/test/test_search_biomodel.rb" />
-    </list>
+    <list default="true" id="c5060248-6b34-4e75-b0c1-8bf3e1f0b7e1" name="Default" comment="" />
     <ignored path="search_biomodel.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
