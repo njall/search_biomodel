@@ -22,7 +22,7 @@ module SysMODB
 
     end
 
-    def search_by_ChEBIID(search_string)
+    def search_by_chebiid(search_string)
 
       client = connection
       response = client.request(:biom, "get_models_id_by_ch_ebi_id") do
@@ -31,7 +31,7 @@ module SysMODB
 
       search_results = response.to_hash[:get_models_id_by_ch_ebi_id_response][:get_models_id_by_ch_ebi_id_return][:get_models_id_by_ch_ebi_id_return]
       if search_results.nil?
-         []
+        []
       else
         search_results
       end
@@ -85,7 +85,7 @@ module SysMODB
         soap.body = {:id => search_string, :attributes! => {:id => {"xsi:type" => "xsd:string"}}}
       end
       search_results = response.to_hash[:get_model_name_by_id_response][:get_model_name_by_id_return]
-      if search_results.nil?
+      if search_results.nil? || search_results.include?('is an invalid Model ID.')
         []
       else
         search_results

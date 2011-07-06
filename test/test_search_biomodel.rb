@@ -17,21 +17,21 @@ class TestSearchBiomodel < Test::Unit::TestCase
   end
 
 
-  def test_search_by_ChEBIID
+  def test_search_by_chebiid
     puts "\n\n ---------------------search by chebiid---------------------\n\n"
     response = []
     i = 0
-    response = @instance.search_by_ChEBIID("CHEBI:15422")
+    response = @instance.search_by_chebiid("CHEBI:15422")
     response.each { |x| puts "Response #{i+=1}:   #{x} " }
     response.each { |x| assert_not_nil x }
     assert_not_nil response
   end
 
-  def test_search_by_incorrect_ChEBIID
+  def test_search_by_incorrect_chebiid
     puts "\n\n ---------------------search by incorrect chebiid---------------------\n\n"
     response = []
     i = 0
-    response = @instance.search_by_ChEBIID("THIS IS NOT A VALID CHEBIID!!!!!<P></P>")
+    response = @instance.search_by_chebiid("THIS IS NOT A VALID CHEBIID!!!!!<P></P>")
     response.each { |x| puts "Response #{i+=1}:   #{x} " }
     response.each { |x| assert_not_nil x }
     assert_not_nil response
@@ -65,7 +65,8 @@ class TestSearchBiomodel < Test::Unit::TestCase
     puts response
     assert_not_nil response
   end
-    def test_get_model_name_by_incorrect_id
+
+  def test_get_model_name_by_incorrect_id
     puts "\n\n ---------------------model name by incorrect ID---------------------\n\n"
     response = @instance.get_model_name_by_id("THIS IS NOT A VALID ID!!!!!<P></P>")
     puts response
@@ -83,7 +84,7 @@ class TestSearchBiomodel < Test::Unit::TestCase
     assert_not_nil response
   end
 
-    def test_search_by_incorrect_person
+  def test_search_by_incorrect_person
     puts "\n\n ---------------------model ID by incorrect person---------------------\n\n"
     response = []
     i=0
