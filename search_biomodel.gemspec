@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{search_biomodel}
-  s.version = "1.0.3"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Niall Beard"]
-  s.date = %q{2011-07-05}
-  s.description = %q{Client package for creating, sending, receiving and consuming SOAP messages from BioModels search engine }
+  s.date = %q{2011-07-06}
+  s.description = %q{Client package for creating, sending, recieving and consuming SOAP messages from BioModels search engine }
   s.email = %q{beardn9@cs.man.ac.uk}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -18,6 +18,14 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".idea/.name",
+    ".idea/.rakeTasks",
+    ".idea/encodings.xml",
+    ".idea/misc.xml",
+    ".idea/modules.xml",
+    ".idea/search_biomodel.iml",
+    ".idea/vcs.xml",
+    ".idea/workspace.xml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
