@@ -17,16 +17,6 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".document",
-    ".idea/.name",
-    ".idea/.rakeTasks",
-    ".idea/dictionaries/root.xml",
-    ".idea/encodings.xml",
-    ".idea/misc.xml",
-    ".idea/modules.xml",
-    ".idea/search_biomodel.iml",
-    ".idea/vcs.xml",
-    ".idea/workspace.xml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
