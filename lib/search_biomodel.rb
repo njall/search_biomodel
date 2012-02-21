@@ -36,7 +36,11 @@ module SysMODB
       results = results.first(3)
 
       sbml_results = Array.new
-      results.each{ |a| sbml_results << "#{@connection.getModel(a)}" }
+
+      results.each_with_index do |a, i| 
+         sbml_results[i] = Hash.new 
+         sbml_results[i] = Nori.parse(@connection.getSimpleModel(a))[:simple_models][:simple_model] 
+      end
       sbml_results
     end
 
@@ -56,6 +60,26 @@ module SysMODB
       end
     end
 
+
+
+    def getSimpleModel(model_id)
+      client = connection
+      response = client.request(:biom, "get_simple_model_by_id") do
+        soap.body = {:id => model_id, :attributes! => {:id => {"xsi:type" => "xsd:string"}}}
+      end
+
+      search_results = response.to_hash[:get_simple_model_by_id_response][:get_simple_model_by_id_return]
+
+      if search_results.nil?
+        []
+      else
+        search_results
+      end
+    end
+
+    def test_stuffs()
+      puts "Hi"
+    end
 
     #search_by_chebiid
     #search_by_name
