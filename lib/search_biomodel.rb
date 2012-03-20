@@ -33,7 +33,7 @@ module SysMODB
       #turn into one big array, remove duplicates and select first X
       results = results.flatten
       results = results.uniq
-      results = results.first(3)
+      results = results.first(10)
 
       sbml_results = Array.new
 
