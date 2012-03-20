@@ -77,10 +77,6 @@ module SysMODB
       end
     end
 
-    def test_stuffs()
-      puts "Hi"
-    end
-
     #search_by_chebiid
     #search_by_name
     #search_by_person
