@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{search_biomodel}
-  s.version = "2.0.2"
+  s.version = "2.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Niall Beard"]
-  s.date = %q{2012-02-21}
+  s.date = %q{2012-03-20}
   s.description = %q{Client package for creating, sending, recieving and consuming SOAP messages from BioModels search engine }
   s.email = %q{beardn9@cs.man.ac.uk}
   s.extra_rdoc_files = [
