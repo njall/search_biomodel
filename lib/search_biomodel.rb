@@ -70,13 +70,17 @@ module SysMODB
         soap.body = {:id => model_id, :attributes! => {:id => {"xsi:type" => "xsd:string"}}}
       end
 
-      if !response.nil?
+      if !response.nil
+       begin 
          search_results = response.to_hash[:get_simple_model_by_id_response][:get_simple_model_by_id_return]
+       rescue
+         return []
+       end
       end
       if search_results.nil?
-        []
+        return []
       else
-        search_results
+        return search_results
       end
     end
 
