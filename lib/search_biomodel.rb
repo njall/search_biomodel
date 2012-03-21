@@ -38,8 +38,10 @@ module SysMODB
       sbml_results = Array.new
 
       results.each_with_index do |a, i| 
-         sbml_results[i] = Hash.new 
-         sbml_results[i] = Nori.parse(@connection.getSimpleModel(a))[:simple_models][:simple_model] unless a.nil?
+         if !a.nil?
+          sbml_results[i] = Hash.new 
+          sbml_results[i] = Nori.parse(@connection.getSimpleModel(a))[:simple_models][:simple_model] 
+         end
       end
       sbml_results
     end
@@ -68,8 +70,9 @@ module SysMODB
         soap.body = {:id => model_id, :attributes! => {:id => {"xsi:type" => "xsd:string"}}}
       end
 
-      search_results = response.to_hash[:get_simple_model_by_id_response][:get_simple_model_by_id_return] unless response.nil?
-
+      if !response.nil?
+         search_results = response.to_hash[:get_simple_model_by_id_response][:get_simple_model_by_id_return]
+      end
       if search_results.nil?
         []
       else
