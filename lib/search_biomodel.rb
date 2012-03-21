@@ -13,7 +13,7 @@ module SysMODB
       @connection = Savon.configure do |config|
         config.log = false
         HTTPI.log = false
-        config.raise_errors = true
+        config.raise_errors = false
         Savon::Client.new do
           wsdl.document = "http://www.ebi.ac.uk/biomodels-main/services/BioModelsWebServices?wsdl"
           wsdl.namespace = "http://biomodels.ebi.ac.uk"
