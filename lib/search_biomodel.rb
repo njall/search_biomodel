@@ -39,7 +39,7 @@ module SysMODB
 
       results.each_with_index do |a, i| 
          sbml_results[i] = Hash.new 
-         sbml_results[i] = Nori.parse(@connection.getSimpleModel(a))[:simple_models][:simple_model] 
+         sbml_results[i] = Nori.parse(@connection.getSimpleModel(a))[:simple_models][:simple_model] unless a.nil?
       end
       sbml_results
     end
@@ -52,7 +52,7 @@ module SysMODB
         soap.body = {:id => model_id, :attributes! => {:id => {"xsi:type" => "xsd:string"}}}
       end
 
-      search_results = response.to_hash[:get_model_by_id_response][:get_model_by_id_return]
+      search_results = response.to_hash[:get_model_by_id_response][:get_model_by_id_return] unless response.nil?
       if search_results.nil?
         []
       else
@@ -68,7 +68,7 @@ module SysMODB
         soap.body = {:id => model_id, :attributes! => {:id => {"xsi:type" => "xsd:string"}}}
       end
 
-      search_results = response.to_hash[:get_simple_model_by_id_response][:get_simple_model_by_id_return]
+      search_results = response.to_hash[:get_simple_model_by_id_response][:get_simple_model_by_id_return] unless response.nil?
 
       if search_results.nil?
         []
@@ -87,7 +87,7 @@ module SysMODB
         soap.body = {:ChEBBId => search_string, :attributes! => {:ChEBBId => {"xsi:type" => "xsd:string"}}}
       end
 
-      search_results = response.to_hash[:get_models_id_by_ch_ebi_id_response][:get_models_id_by_ch_ebi_id_return][:get_models_id_by_ch_ebi_id_return]
+      search_results = response.to_hash[:get_models_id_by_ch_ebi_id_response][:get_models_id_by_ch_ebi_id_return][:get_models_id_by_ch_ebi_id_return] unless response.nil?
       if search_results.nil?
         []
       else
@@ -143,7 +143,7 @@ module SysMODB
       response = client.request(:biom, "get_all_models") do
         soap.body = {:modelName => "?", :attributes! => {:modelName => {"xsi:type" => "xsd:string"}}}
       end
-      search_results = response.to_hash[:multi_ref][:item]
+      search_results = response.to_hash[:multi_ref][:item] unless response.nil?
       if search_results.nil?
         []
       else
