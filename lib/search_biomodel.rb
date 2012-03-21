@@ -40,7 +40,11 @@ module SysMODB
       results.each_with_index do |a, i| 
          if !a.nil?
           sbml_results[i] = Hash.new 
-          sbml_results[i] = Nori.parse(@connection.getSimpleModel(a))[:simple_models][:simple_model] 
+          begin
+            sbml_results[i] = Nori.parse(@connection.getSimpleModel(a))[:simple_models][:simple_model] 
+          rescue
+            sbml_results[i] = nil
+          end
          end
       end
       sbml_results
